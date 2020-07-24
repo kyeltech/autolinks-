@@ -1,0 +1,176 @@
+<div class="container-fluid bg-dark pt-5 footer border-top border-success border-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-4">
+                <img src="{{ URL::asset('assets/img/logo.png')}}" width="200" alt="">
+                <p class="pl-3 font-weight-bold text-white" style="opacity: 0.8;"><span><strong>VERIFIED FIRST</strong></span></p>
+            </div>
+            <div class="col-md-3 mt-4">
+                <h4 class="text-white"><strong>About</strong> Us</h4>
+                <ul class="list-group">
+                    <li><a href="" class="list-group-item py-1"></a>Contact</li>
+                    <li><a href="" class="list-group-item py-1"></a>Brands</li>
+                    <li><a href="" class="list-group-item py-1"></a>Advertising Online</li>
+                    <li><a href="" class="list-group-item py-1"></a>Site Map</li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+                <h4 class="text-white"><strong>Need</strong> Help?</h4>
+                <ul class="list-group">
+                    <li><a href="" class="list-group-item py-1"></a>How do i buy?</li>
+                    <li><a href="" class="list-group-item py-1"></a>How do i sell?</li>
+                    <li><a href="" class="list-group-item py-1"></a>Price list</li>
+                    <li><a href="" class="list-group-item py-1"></a>Car Dealers</li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+                <h4 class="text-white"><strong>Useful</strong> Links</h4>
+                <ul class="list-group">
+                    <li><a href="{{route('sell')}}" class="list-group-item py-1"></a>Sell</li>
+                    <li><a href="" class="list-group-item py-1"></a>Buy</li>
+                    <li><a href="" class="list-group-item py-1"></a>Login</li>
+                    <li><a href="" class="list-group-item py-1"></a>Dealer Login</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3 mt-4">
+                <h4 class="text-white mb-3"><strong>Join</strong> Us</h4>
+                <span><a href="" class="py-1"></a><i class="fab fa-facebook i mr-3"></i></span>
+                <span><a href="" class="py-1"></a><i class="fab fa-twitter i mr-3"></i></span>
+                <span><a href="" class="py-1"></a><i class="fab fa-instagram i mr-3"></i></span>
+                <span><a href="" class="py-1"></a><i class="fab fa-whatsapp i mr-3"></i></span>
+            </div>
+            <div class="col-md-3 mt-4">
+                <h4 class="text-white"><strong>Contact</strong> Us</h4>
+                <ul class="list-group">
+                    <li><a href="" class="list-group-item py-1"></a>+234 *** *** *** **** / +234 *** *** *** ****</li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+                <h4 class="text-white"><strong>Payment</strong> Methods</h4>
+                <span><a href="" class="py-1"></a><i class="fab fa-cc-visa i mr-3"></i></span>
+                <span><a href="" class="py-1"></a><i class="fab fa-cc-mastercard i mr-3"></i></span>
+                <span><a href="" class="py-1"></a><i class="fab fa-cc-paypal i mr-3"></i></span>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="input-group mt-3">
+                    <input type="email" class="form-control" placeholder="Your emaill address" aria-label="Email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top mt-5 py-3">
+            <small class="text-white mr-auto">© 2019 SeedVest. All rights reserved</small>
+            <small class="text-white">Designed by *****</small>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Custom -->
+
+    <script src="{{ asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/app.js') }}" defer></script>
+    <script src="{{ asset('assets/js/loader.js') }}"></script>
+    <script src="{{ asset('assets/slick/slick.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        // slick
+        $(document).on('ready', function() {
+            $(".regular").slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 5,
+                // the magic
+                responsive: [{
+
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 3,
+                infinite: true
+                }
+
+                }, {
+
+                breakpoint: 767.98,
+                settings: {
+                slidesToShow: 2,
+                dots: false
+                }
+
+                }, {
+
+                breakpoint: 575.98,
+                settings: {
+                slidesToShow: 1,
+                dots: false
+                }
+
+                }]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // slick
+        $(document).on('ready', function() {
+            $(".center").slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                // the magic
+                responsive: [{
+
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 2,
+                infinite: true
+                }
+
+                }, {
+
+                breakpoint: 767.98,
+                settings: {
+                slidesToShow: 1,
+                dots: false
+                }
+
+                }, {
+
+                breakpoint: 575.98,
+                settings: {
+                slidesToShow: 1,
+                dots: false
+                }
+
+                }]
+            });
+        });
+    </script>
+    <script src="{{ asset('assets/fxss-rate/rate.js') }}"></script>
+    <script>
+        $("#rateBox").rate({
+            length: 5,
+            value: 3.5,
+            readonly: false,
+            size: '48px',
+            selectClass: 'fxss_rate_select',
+            incompleteClass: 'fxss_rate_no_all_select',
+            customClass: 'custom_class',
+            callback: function(object){
+                console.log(object)
+            }
+        });
+    </script>
+    <!-- JQUERY STEP -->
+    <script src="{{ asset('assets/js/jquery.steps.js') }}"></script>
+
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+</body>
+</html>

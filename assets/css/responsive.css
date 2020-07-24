@@ -1,0 +1,57 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .logo-title{
+        font-size: 12px!important;
+    }
+    .dis .card{
+        width: 100%!important;
+    }
+    .breadcrum .avater{
+        margin-bottom: 50px!important;
+        width: 165px!important;
+    }
+    .compare .text-right{
+        padding-top: 5px;
+        text-align: left!important;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .breadcrum .avater{
+        margin-bottom: 50px!important;
+        width: 165px!important;
+        z-index: 0!important;
+    }
+    .compare .text-right{
+        padding-top: 5px;
+        text-align: left!important;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .breadcrum .avater{
+        margin-bottom: 50px!important;
+        width: 165px!important;
+        height: 90px!important;
+        z-index: 0!important;
+    }
+    .breadcrum .icon{
+        font-size: 18px!important;
+    }
+    .breadcrum .ra{
+        top: 10px!important;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .breadcrum .avater{
+        margin-bottom: 20px!important;
+        height: 125px!important;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
